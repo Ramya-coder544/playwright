@@ -83,7 +83,7 @@ for(let i=0;i<await rows.count();i++){
  const OrderDetails=await page.locator(".col-text").textContent();
  expect(orderId.includes(OrderDetails)).toBeTruthy();
 
- await page.pause();
+
 
   
 });

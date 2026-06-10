@@ -1,6 +1,7 @@
 // @ts-check
 // 
 import { chromium, defineConfig, devices, firefox, webkit } from '@playwright/test';
+import { trace } from 'console';
 
 //const {devices}= require('@playwright/test');
 
@@ -22,7 +23,9 @@ const config=({
   
   use:{
     browserName: 'chromium',
-    headless: false
+    headless: false,
+    screenshot:'on',
+    trace: 'Retain-on-failure' // off, on to track the logs
   }
 
   

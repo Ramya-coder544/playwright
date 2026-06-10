@@ -74,7 +74,7 @@ const AllTitle=await CardTitle.allTextContents();
 console.log(AllTitle);
 });
 
-test.only('child window handle', async({browser})=>
+test('child window handle', async({browser})=>
 {
     const context=await browser.newContext();
     const page=await context.newPage();
